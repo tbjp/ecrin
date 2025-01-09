@@ -1,47 +1,30 @@
 "use client";
-
-import Chart from "react-apexcharts";
+import { ProgressCircle } from "@/components/ProgressCircle";
 
 const data = [
   {
     name: "Occupancy",
-    count: 68,
+    rate: 62,
     fill: "#FAE27C",
   },
 ];
 
-const OccupancyRadial = () => {
-  const series = data.map((item) => item.count);
-  const options = {
-    chart: {
-      type: "radialBar" as "radialBar",
-    },
-    labels: data.map((item) => item.name),
-    colors: data.map((item) => item.fill),
-    dataLabels: {
-      showOn: "always",
-      name: {
-        offsetY: -10,
-        show: true,
-        color: "#888",
-        fontSize: "13px",
-      },
-      value: {
-        color: "#111",
-        fontSize: "30px",
-        show: true,
-      },
-    },
-    legend: {
-      show: false,
-    },
-  };
-
+export function OccupancyRadial() {
   return (
-    <div className="bg-white p-4 rounded-md">
-      <Chart options={options} series={series} type="radialBar" width="100%" />
+    <div className="flex flex-col items-center justify-center gap-4">
+      <ProgressCircle value={data[0].rate} radius={80} strokeWidth={15}>
+        <div className="flex flex-col items-center justify-center gap-2">
+          <div className="text-3xl font-bold text-gray-900 dark:text-gray-50">
+            {data[0].rate}%
+          </div>
+        </div>
+      </ProgressCircle>
+      <div className="text-xl font-medium text-gray-500 dark:text-gray-50">
+        Occupancy
+      </div>
+      <p className="text-sm">Average occupancy rate for the next 7 days</p>
     </div>
   );
-};
+}
 
 export default OccupancyRadial;
