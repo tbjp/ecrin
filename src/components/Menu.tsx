@@ -4,6 +4,7 @@ import { TbPigMoney } from "react-icons/tb";
 import { CgProfile } from "react-icons/cg";
 import { TbSettings } from "react-icons/tb";
 import { TbLogout } from "react-icons/tb";
+import { TbCalendarCheck } from "react-icons/tb";
 import { BiBuildingHouse } from "react-icons/bi";
 
 import Link from "next/link";
@@ -18,19 +19,24 @@ const menuItems = [
         href: "/",
       },
       {
+        icon: <TbPigMoney />,
+        label: "Financials",
+        href: "/financials",
+      },
+      {
         icon: <BiBuildingHouse />,
         label: "Properties",
         href: "/properties",
       },
       {
         icon: <GoPeople />,
-        label: "Visitors",
-        href: "/visitors",
+        label: "Staff",
+        href: "/staff",
       },
       {
-        icon: <TbPigMoney />,
-        label: "Financials",
-        href: "/financials",
+        icon: <TbCalendarCheck />,
+        label: "Bookings",
+        href: "/bookings",
       },
     ],
   },

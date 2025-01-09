@@ -20,7 +20,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`{inter.className} h-screen flex`}>
+      <body className={`${inter.className} h-screen flex`}>
         {/* Left side */}
         <div className="w-[14%] md:w-[8%] lg:w-[16%] bg-red-200">
           <Link

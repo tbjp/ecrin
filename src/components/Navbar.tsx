@@ -1,5 +1,6 @@
 import { TbSearch } from "react-icons/tb";
 import { TbBaguette } from "react-icons/tb";
+import { TbNotification } from "react-icons/tb";
 
 const Navbar = () => {
   return (
@@ -15,6 +16,12 @@ const Navbar = () => {
       </div>
       {/* Profile icon */}
       <div className="flex items-center gap-6 justify-end w-full">
+        <div className="bg-white rounded-full w-7 h-7 flex items-center justify-center cursor-pointer relative">
+          <TbNotification size="20px" />
+          <div className="absolute -top-2 -right-2 w-4 h-4 flex items-center justify-center bg-blue-500 text-white rounded-full text-xs">
+            1
+          </div>
+        </div>
         <div className="flex flex-col">
           <span className="text-xs leading-3 font-medium">Mathilde Dupont</span>
           <span className="text-[10px] text-gray-500 text-right">Admin</span>
