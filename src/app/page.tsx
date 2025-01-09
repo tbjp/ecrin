@@ -19,11 +19,11 @@ export default function Home() {
         {/* MIDDLE CHARTS */}
         <div className="flex gap-4 flex-col lg:flex-row">
           {/* OCCUPANCY CHART */}
-          <div className="w-full lg:w-1/3 h-[450px] bg-white rounded-2xl p-4">
+          <div className="w-full lg:w-1/3 bg-white rounded-2xl p-4">
             <OccupancyRadial />
           </div>
           {/* ATTENDANCE CHART */}
-          <div className="w-full lg:w-2/3 h-[450px] bg-white rounded-2xl p-4">
+          <div className="w-full lg:w-2/3 bg-white rounded-2xl p-4">
             <DashRevChart />
           </div>
         </div>
