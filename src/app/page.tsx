@@ -13,8 +13,8 @@ export default function Home() {
         <div className="flex gap-4 flex-wrap justify-between">
           <StatCard type="properties" />
           <StatCard type="staff" />
-          <StatCard type="active bookings" />
-          <StatCard type="occupancy rate" />
+          <StatCard type="bookings" />
+          <StatCard type="issues" />
         </div>
         {/* MIDDLE CHARTS */}
         <div className="flex gap-4 flex-col lg:flex-row">

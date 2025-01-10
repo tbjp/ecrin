@@ -21,15 +21,21 @@ export default function RootLayout({
       lang="en"
       className={`${GeistSans.className} antialiased dark:bg-gray-950`}
     >
-      <body className="h-screen flex  bg-blue-200">
+      <body className="h-screen flex  bg-gray-200">
         {/* Left side */}
-        <div className="w-[14%] md:w-[8%] lg:w-[16%] bg-red-200 fixed top-0 h-screen">
+        <div className="w-[14%] md:w-[8%] lg:w-[16%] bg-gray-900 fixed top-0 h-screen lg:ps-3">
           <Link
             href="/"
             className="flex items-center justify-center gap-2 lg:justify-start p-4"
           >
-            <Image src="home.svg" alt="logo" width={32} height={32} />
-            <span className="hidden lg:block">Ecrin</span>
+            <Image
+              src="home.svg"
+              alt="logo"
+              width={32}
+              height={32}
+              className="invert"
+            />
+            <span className="hidden lg:block text-white">Ecrin</span>
           </Link>
           <Menu />
         </div>

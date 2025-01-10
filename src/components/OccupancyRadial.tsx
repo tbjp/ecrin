@@ -1,10 +1,11 @@
 "use client";
 import { ProgressCircle } from "@/components/ProgressCircle";
+import { randomNumber } from "@/lib/randomNumber";
 
 const data = [
   {
     name: "Occupancy",
-    rate: 62,
+    rate: randomNumber(70, 90),
     fill: "#FAE27C",
   },
 ];
