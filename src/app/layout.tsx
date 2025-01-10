@@ -29,13 +29,19 @@ export default function RootLayout({
             className="flex items-center justify-center gap-2 lg:justify-start p-4"
           >
             <Image
-              src="home.svg"
+              src="/images/logo.png"
               alt="logo"
               width={32}
               height={32}
               className="invert"
             />
-            <span className="hidden lg:block text-white">Ecrin</span>
+            <Image
+              className="hidden lg:block invert"
+              src="/images/logo_text.png"
+              width={66}
+              height={30}
+              alt="logo"
+            />
           </Link>
           <Menu />
         </div>

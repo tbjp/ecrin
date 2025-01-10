@@ -1,4 +1,5 @@
 import Announcements from "@/components/Announcements";
+import { DashBarChart } from "@/components/DashBarChart";
 import DashRevChart from "@/components/DashRevChart";
 import OccupancyRadial from "@/components/OccupancyRadial";
 import SmallCalendar from "@/components/SmallCalendar";
@@ -19,17 +20,17 @@ export default function Home() {
         {/* MIDDLE CHARTS */}
         <div className="flex gap-4 flex-col lg:flex-row">
           {/* OCCUPANCY CHART */}
-          <div className="w-full lg:w-1/3 bg-white rounded-2xl p-4">
+          <div className="w-full lg:w-1/3 bg-white rounded-md p-4">
             <OccupancyRadial />
           </div>
           {/* ATTENDANCE CHART */}
-          <div className="w-full lg:w-2/3 bg-white rounded-2xl p-4">
+          <div className="w-full lg:w-2/3 bg-white rounded-md p-4">
             <DashRevChart />
           </div>
         </div>
         {/* BOTTOM CHART */}
-        <div className="w-full h-[500px] bg-white rounded-2xl p-4">
-          {/* <FinanceChart /> */}
+        <div className="w-full bg-white rounded-md p-4">
+          <DashBarChart />
         </div>
       </div>
       {/* RIGHT */}

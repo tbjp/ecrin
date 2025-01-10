@@ -19,7 +19,7 @@ const StatCard = ({ type }: { type: StatType }) => {
   };
 
   return (
-    <div className="rounded-2xl odd:bg-violet-200 even:bg-blue-200 p-4 flex-1">
+    <div className="rounded-md odd:bg-violet-200 even:bg-blue-200 p-4 flex-1">
       <div className="flex justify-between items-center">
         <span className="text-[10px] bg-white px-2 py-1 rounded-full text-green-600">
           2025/26
