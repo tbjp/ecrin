@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
-import { GeistSans } from "geist/font/sans";
+// import { GeistSans } from "geist/font/sans";
+import { Inter } from "next/font/google";
 import "./globals.css";
 import Link from "next/link";
 import Image from "next/image";
@@ -11,6 +12,8 @@ export const metadata: Metadata = {
   description: "Next.js Property Management System",
 };
 
+const inter = Inter({ subsets: ["latin"] });
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -19,11 +22,11 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${GeistSans.className} antialiased dark:bg-gray-950`}
+      className={`${inter.className} antialiased dark:bg-gray-950`}
     >
-      <body className="h-screen flex  bg-gray-200">
+      <body className="h-screen flex bg-gray-200">
         {/* Left side */}
-        <div className="w-[14%] md:w-[8%] lg:w-[16%] bg-gray-900 fixed top-0 h-screen lg:ps-3">
+        <div className="w-[14%] md:w-[8%] lg:w-[16%] bg-ecrinNavy fixed top-0 h-screen lg:ps-3">
           <Link
             href="/"
             className="flex items-center justify-center gap-2 lg:justify-start p-4"
@@ -47,7 +50,7 @@ export default function RootLayout({
         </div>
         {/* Right side */}
         <div className="w-[86%] md:w-[92%] lg:w-[84%] ml-[14%] md:ml-[8%] lg:ml-[16%]">
-          <div className="sticky top-0 bg-gray-400 z-10">
+          <div className="sticky top-0 bg-ecrinNavy z-10">
             <Navbar />
           </div>
           {children}

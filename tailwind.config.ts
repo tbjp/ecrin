@@ -12,12 +12,12 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
-        lamaSky: "#C3EBFA",
-        lamaSkyLight: "#EDF9FD",
-        lamaPurple: "#CFCEFF",
-        lamaPurpleLight: "#F1F0FF",
-        lamaYellow: "#FAE27C",
-        lamaYellowLight: "#FEFCE8",
+        ecrinNavy: "#122a49",
+        ecrinNavyLight: "#9bbbe6",
+        ecrinSlate: "#9baab9",
+        ecrinSlateDark: "#384451",
+        ecrinMoss: "#bec8aa",
+        ecrinMossDark: "#505A3B",
       },
 
       // For Tremor charts

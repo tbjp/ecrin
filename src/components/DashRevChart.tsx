@@ -101,14 +101,18 @@ function DashRevChart() {
   return (
     <div>
       <div className="flex justify-start items-center">
-        <div className="text-6xl w-1/2 text-center text-gray-500">{month}</div>
+        <div className="text-6xl w-1/2 text-center text-ecrinSlate">
+          {month}
+        </div>
         <div className="flex-cols w-1/2 px-6">
-          <div className="text-sm text-violet-800">Last year</div>
-          <div className="text-xl font-semibold text-gray-900 dark:text-gray-50">
+          <div className="text-sm text-ecrinNavy font-medium">Last year</div>
+          <div className="text-xl font-semibold text-ecrinNavy dark:text-gray-50">
             {formattedValue1}
           </div>
-          <div className="text-sm text-emerald-800 mb-0 pt-2">This year</div>
-          <div className="text-xl font-semibold text-gray-900 dark:text-gray-50">
+          <div className="text-sm text-ecrinMossDark mb-0 pt-2 font-medium">
+            This year
+          </div>
+          <div className="text-xl font-semibold text-ecrinMossDark dark:text-gray-50">
             {formattedValue2}
           </div>
         </div>
@@ -118,7 +122,7 @@ function DashRevChart() {
         data={data}
         index="date"
         categories={["lastYear", "thisYear"]}
-        colors={["violet", "emerald"]}
+        colors={["ecrinNavy", "ecrinMoss"]}
         showLegend={false}
         showYAxis={false}
         startEndOnly={false}
@@ -136,9 +140,9 @@ function DashRevChart() {
           return null;
         }}
       />
-      <p className="text-xl font-medium text-center text-gray-500 dark:text-gray-50 pt-3">
+      <h2 className="text-xl font-medium text-center text-gray-500 dark:text-gray-50 h3t-3 pt-3">
         Revenue
-      </p>
+      </h2>
     </div>
   );
 }

@@ -32,6 +32,10 @@ const progressCircleVariants = tv({
         background: "stroke-emerald-200 dark:stroke-emerald-500/30",
         circle: "stroke-emerald-500 dark:stroke-emerald-500",
       },
+      ecrin: {
+        background: "stroke-ecrinNavyLight dark:stroke-ecrinNavy/30",
+        circle: "stroke-ecrinNavy dark:stroke-ecrinNavy",
+      },
     },
   },
   defaultVariants: {

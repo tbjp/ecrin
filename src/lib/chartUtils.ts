@@ -3,6 +3,18 @@
 export type ColorUtility = "bg" | "stroke" | "fill" | "text";
 
 export const chartColors = {
+  ecrinMoss: {
+    bg: "bg-ecrinMoss",
+    stroke: "stroke-ecrinMoss",
+    fill: "fill-ecrinMoss",
+    text: "text-ecrinMoss",
+  },
+  ecrinNavy: {
+    bg: "bg-ecrinNavy",
+    stroke: "stroke-ecrinNavy",
+    fill: "fill-ecrinNavy",
+    text: "text-ecrinNavy",
+  },
   blue: {
     bg: "bg-blue-500",
     stroke: "stroke-blue-500",

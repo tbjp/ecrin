@@ -29,12 +29,10 @@ const chartdata: DataItem[] = [
 
 export const DashBarChart = () => (
   <BarChart
-    className="h-80"
+    className="h-80 pe-8 pt-3"
     data={chartdata}
     index="property"
     categories={["Bookings"]}
-    xAxisLabel="Property"
-    yAxisLabel="Bookings for next 30 days"
     showLegend={false}
   />
 );
