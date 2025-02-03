@@ -71,7 +71,7 @@ const data: DataItem[] = [
   },
 ];
 
-function DashRevChart() {
+function DashIncomeChart() {
   const [datas, setDatas] = React.useState<TooltipProps | null>(null);
   const currencyFormatter = (number: number) =>
     `¥${Intl.NumberFormat("jp").format(number)}`;
@@ -141,10 +141,10 @@ function DashRevChart() {
         }}
       />
       <h2 className="text-xl font-medium text-center text-gray-500 dark:text-gray-50 h3t-3 pt-3">
-        Revenue
+        Net Income
       </h2>
     </div>
   );
 }
 
-export default DashRevChart;
+export default DashIncomeChart;

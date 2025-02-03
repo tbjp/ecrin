@@ -1,6 +1,6 @@
 import Announcements from "@/components/Announcements";
 import { DashBarChart } from "@/components/DashBarChart";
-import DashRevChart from "@/components/DashRevChart";
+import DashIncomeChart from "@/components/DashIncomeChart";
 import OccupancyRadial from "@/components/OccupancyRadial";
 import SmallCalendar from "@/components/SmallCalendar";
 import StatCard from "@/components/StatCard";
@@ -25,7 +25,7 @@ export default function Home() {
           </div>
           {/* ATTENDANCE CHART */}
           <div className="w-full lg:w-2/3 bg-white rounded-md p-4">
-            <DashRevChart />
+            <DashIncomeChart />
           </div>
         </div>
         {/* BOTTOM CHART */}

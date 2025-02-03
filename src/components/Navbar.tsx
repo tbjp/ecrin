@@ -24,13 +24,13 @@ const Navbar = () => {
         </div>
         <div className="flex flex-col">
           <span className="text-xs leading-3 font-medium text-white">
-            Mathilde Dupont
+            Sora Ishida
           </span>
           <span className="text-[10px] text-gray-400 text-right">Admin</span>
         </div>
         <div className="rounded-full bg-white w-[40px] h-[40px] flex items-center justify-center">
           {/* <TbBaguette size="30px" /> */}
-          <span className="text-xl font-medium">MD</span>
+          <span className="text-xl font-medium">SI</span>
         </div>
       </div>
     </div>
