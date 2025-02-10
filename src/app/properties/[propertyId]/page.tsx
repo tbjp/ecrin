@@ -8,8 +8,9 @@ type Props = {
   };
 };
 
-export default function PropertyPage({ params }: Props) {
-  const property = properties.find((p) => p.id === params.propertyId);
+export default async function PropertyPage({ params }: Props) {
+  const { propertyId } = await params;
+  const property = properties.find((p) => p.id === propertyId);
 
   if (!property) {
     notFound();
