@@ -14,12 +14,13 @@ const data = [
 export default function RevenueChart() {
   return (
     <Card className="p-4">
-      <Title>Monthly Revenue</Title>
+      <Title className="pb-4">Monthly Revenue</Title>
       <BarChart
         data={data}
         index="month"
         categories={["revenue"]}
         colors={["ecrinMoss"]}
+        showLegend={false}
       />
     </Card>
   );

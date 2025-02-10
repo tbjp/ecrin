@@ -12,10 +12,10 @@ import {
 import { Card, Title } from "@/components/ui/Card";
 
 const properties = [
-  { property: "La Baguette Magique", revenue: 45000 },
-  { property: "La Forêt", revenue: 52000 },
-  { property: "Villa Sakura", revenue: 68000 },
-  { property: "Maison du Pavillon", revenue: 75000 },
+  { property: "La Baguette Magique", revenue: 450000 },
+  { property: "La Forêt", revenue: 520000 },
+  { property: "Villa Sakura", revenue: 680000 },
+  { property: "Maison du Pavillon", revenue: 750000 },
 ];
 
 export default function TopPropertiesTable() {
@@ -26,7 +26,7 @@ export default function TopPropertiesTable() {
         <TableHead>
           <TableRow>
             <TableHeaderCell>Property</TableHeaderCell>
-            <TableHeaderCell>Revenue ($)</TableHeaderCell>
+            <TableHeaderCell>Revenue (¥)</TableHeaderCell>
           </TableRow>
         </TableHead>
         <TableBody>

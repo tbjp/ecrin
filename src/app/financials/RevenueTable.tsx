@@ -4,7 +4,7 @@ import {
   Table,
   TableBody,
   TableCell,
-  TableHead,
+  TableHeaderCell,
   TableRow,
 } from "@/components/ui/Table";
 import { Card, Title } from "@/components/ui/Card";
@@ -15,8 +15,8 @@ export default function RevenueTable({ properties }) {
       <Title>Revenue & Bookings</Title>
       <Table>
         <TableRow>
-          <TableHead>Property</TableHead>
-          <TableHead>Bookings</TableHead>
+          <TableHeaderCell>Property</TableHeaderCell>
+          <TableHeaderCell>Bookings</TableHeaderCell>
         </TableRow>
         <TableBody>
           {properties.map((item, index) => (

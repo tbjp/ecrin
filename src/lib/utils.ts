@@ -37,3 +37,11 @@ export const hasErrorInput = [
   // ring color
   "ring-red-200 dark:ring-red-700/30",
 ];
+
+export const formatJPY = (amount: number) => {
+  return new Intl.NumberFormat("jp", {
+    style: "currency",
+    currency: "JPY",
+    maximumFractionDigits: 0,
+  }).format(amount);
+};

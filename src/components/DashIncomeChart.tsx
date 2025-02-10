@@ -4,6 +4,7 @@ import React from "react";
 
 import { LineChart, TooltipProps } from "@/components/LineChart";
 import { randomNumber } from "@/lib/randomNumber";
+import { formatJPY } from "@/lib/utils";
 
 interface DataItem {
   date: string;
@@ -73,8 +74,7 @@ const data: DataItem[] = [
 
 function DashIncomeChart() {
   const [datas, setDatas] = React.useState<TooltipProps | null>(null);
-  const currencyFormatter = (number: number) =>
-    `¥${Intl.NumberFormat("jp").format(number)}`;
+  const currencyFormatter = (number: number) => `${formatJPY(number)}`;
 
   const payload = datas?.payload?.[0];
   const lastYearValue = payload?.payload?.lastYear;

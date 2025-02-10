@@ -15,12 +15,13 @@ const data = [
 export default function ExpenseChart() {
   return (
     <Card className="p-4">
-      <Title>Monthly Expenses</Title>
+      <Title className="pb-4">Monthly Expenses</Title>
       <BarChart
         data={data}
         index="month"
         categories={["expenses"]}
         colors={["ecrinNavy"]}
+        showLegend={false}
       />
     </Card>
   );

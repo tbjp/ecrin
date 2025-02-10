@@ -12,11 +12,10 @@ import { randomNumber } from "@/lib/randomNumber";
 export default function Financials() {
   return (
     <div className="container mx-auto p-4 space-y-6">
-      <div className="mb-8">
+      <div className="mb-6">
         <h1 className="text-2xl font-bold text-ecrinNavy">
           Financial Overview
         </h1>
-        <Text>A summary of revenue, expenses, and profitability.</Text>
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">

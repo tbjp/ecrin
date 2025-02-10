@@ -8,4 +8,8 @@ export interface Property {
   bookings: number;
   hasIssues: boolean;
   issueCount?: number;
+  issues?: string[];
+  staffMembers?: string[];
+  activeBookings?: string[];
+  futureBookings?: string[];
 }
