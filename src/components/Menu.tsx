@@ -1,3 +1,5 @@
+"use client";
+
 import { TbLayoutDashboardFilled } from "react-icons/tb";
 import { GoPeople } from "react-icons/go";
 import { TbPigMoney } from "react-icons/tb";
@@ -6,6 +8,7 @@ import { TbSettings } from "react-icons/tb";
 import { TbLogout } from "react-icons/tb";
 import { TbCalendarCheck } from "react-icons/tb";
 import { BiBuildingHouse } from "react-icons/bi";
+import { usePathname } from "next/navigation";
 
 import Link from "next/link";
 
@@ -63,6 +66,8 @@ const menuItems = [
 ];
 
 const Menu = () => {
+  const pathname = usePathname();
+
   return (
     <div className="mt-4 text-sm">
       {menuItems.map((i) => (
@@ -71,11 +76,17 @@ const Menu = () => {
             {i.title}
           </span>
           {i.items.map((item) => {
+            const isActive = pathname === item.href;
             return (
               <Link
                 href={item.href}
                 key={item.label}
-                className="flex items-center justify-center lg:justify-start gap-4 text-gray-200 py-2 md:px-2 rounded-md hover:bg-lamaSkyLight text-xl lg:text-sm"
+                className={`flex items-center justify-center lg:justify-start
+                gap-4 text-gray-200 py-2 md:px-2 ${
+                  isActive
+                    ? "bg-ecrinNavyLight text-ecrinSlateDark"
+                    : "hover:bg-ecrinNavyLight hover:text-ecrinSlateDark"
+                } text-xl lg:text-sm rounded-md`}
               >
                 {item.icon}
                 <span className="hidden lg:block">{item.label}</span>
