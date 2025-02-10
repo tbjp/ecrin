@@ -49,6 +49,9 @@ export const properties: Property[] = [
     staff: 8,
     bookings: 12,
     hasIssues: false,
+    staffMembers: [staffList[1], staffList[2], staffList[3], staffList[4]],
+    activeBookings: [bookingList[1], bookingList[2], bookingList[3]],
+    futureBookings: [bookingList[0], bookingList[4]],
   },
   {
     id: "3",
@@ -60,6 +63,10 @@ export const properties: Property[] = [
     bookings: 8,
     hasIssues: true,
     issueCount: 2,
+    issues: [issuesList[2], issuesList[3]],
+    staffMembers: [staffList[0], staffList[2], staffList[3], staffList[4]],
+    activeBookings: [bookingList[0], bookingList[2]],
+    futureBookings: [bookingList[1], bookingList[3], bookingList[4]],
   },
   {
     id: "4",
@@ -70,6 +77,9 @@ export const properties: Property[] = [
     staff: 4,
     bookings: 6,
     hasIssues: false,
+    staffMembers: [staffList[1], staffList[3]],
+    activeBookings: [bookingList[2], bookingList[4]],
+    futureBookings: [bookingList[0], bookingList[1]],
   },
   {
     id: "5",
@@ -80,6 +90,9 @@ export const properties: Property[] = [
     staff: 6,
     bookings: 9,
     hasIssues: false,
+    staffMembers: [staffList[0], staffList[2], staffList[4]],
+    activeBookings: [bookingList[1], bookingList[3]],
+    futureBookings: [bookingList[0], bookingList[2], bookingList[4]],
   },
   {
     id: "6",
@@ -91,6 +104,10 @@ export const properties: Property[] = [
     bookings: 5,
     hasIssues: true,
     issueCount: 1,
+    issues: [issuesList[4]],
+    staffMembers: [staffList[1], staffList[2], staffList[4]],
+    activeBookings: [bookingList[0], bookingList[3]],
+    futureBookings: [bookingList[1], bookingList[4]],
   },
   {
     id: "7",
@@ -101,6 +118,9 @@ export const properties: Property[] = [
     staff: 10,
     bookings: 15,
     hasIssues: false,
+    staffMembers: [staffList[0], staffList[1], staffList[3], staffList[4]],
+    activeBookings: [bookingList[1], bookingList[2], bookingList[4]],
+    futureBookings: [bookingList[0], bookingList[3]],
   },
   {
     id: "8",
@@ -112,6 +132,10 @@ export const properties: Property[] = [
     bookings: 4,
     hasIssues: true,
     issueCount: 3,
+    issues: [issuesList[1], issuesList[3], issuesList[4]],
+    staffMembers: [staffList[0], staffList[2], staffList[4]],
+    activeBookings: [bookingList[2], bookingList[3]],
+    futureBookings: [bookingList[0], bookingList[1]],
   },
   {
     id: "9",
@@ -122,6 +146,9 @@ export const properties: Property[] = [
     staff: 8,
     bookings: 12,
     hasIssues: false,
+    staffMembers: [staffList[1], staffList[2], staffList[3], staffList[4]],
+    activeBookings: [bookingList[0], bookingList[2], bookingList[4]],
+    futureBookings: [bookingList[1], bookingList[3]],
   },
   {
     id: "10",
@@ -133,5 +160,9 @@ export const properties: Property[] = [
     bookings: 8,
     hasIssues: true,
     issueCount: 2,
+    issues: [issuesList[0], issuesList[2]],
+    staffMembers: [staffList[0], staffList[1], staffList[3], staffList[4]],
+    activeBookings: [bookingList[1], bookingList[3]],
+    futureBookings: [bookingList[0], bookingList[2], bookingList[4]],
   },
 ];
