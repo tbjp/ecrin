@@ -25,10 +25,10 @@ export function PropertyCard({ property }: { property: Property }) {
         </div>
 
         {property.hasIssues && (
-          <div className="absolute top-2 right-2 w-4 h-4 bg-red-500 rounded-full z-20" />
+          <div className="absolute top-2 right-2 w-4 h-4 bg-red-500 rounded-full z-5" />
         )}
 
-        <div className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/60 to-transparent z-10">
+        <div className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/60 to-transparent z-5">
           <h2 className="text-white font-semibold">{property.name}</h2>
         </div>
 
