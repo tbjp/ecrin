@@ -26,7 +26,7 @@ export default function RootLayout({
     >
       <body className="h-screen flex bg-gray-200">
         {/* Left side */}
-        <div className="w-[14%] md:w-[8%] lg:w-[16%] bg-ecrinNavy fixed top-0 h-screen lg:px-3">
+        <div className="w-[14%] md:w-[8%] lg:w-[16%] bg-ecrinNavy fixed top-0 h-screen lg:px-3 z-30">
           <Link
             href="/"
             className="flex items-center justify-center gap-2 lg:justify-start p-4"
@@ -50,7 +50,7 @@ export default function RootLayout({
         </div>
         {/* Right side */}
         <div className="w-[86%] md:w-[92%] lg:w-[84%] ml-[14%] md:ml-[8%] lg:ml-[16%]">
-          <div className="sticky top-0 bg-ecrinNavy z-10">
+          <div className="sticky top-0 bg-ecrinNavy z-30">
             <Navbar />
           </div>
           {children}

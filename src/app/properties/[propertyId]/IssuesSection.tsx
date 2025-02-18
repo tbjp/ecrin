@@ -83,7 +83,7 @@ export function IssuesSection({ initialIssues }: IssuesSectionProps) {
       <Transition appear show={isModalOpen} as={Fragment}>
         <Dialog
           as="div"
-          className="fixed inset-0 z-10 flex items-center justify-center"
+          className="fixed inset-0 z-50 flex items-center justify-center"
           onClose={() => setIsModalOpen(false)}
         >
           <div className="fixed inset-0">

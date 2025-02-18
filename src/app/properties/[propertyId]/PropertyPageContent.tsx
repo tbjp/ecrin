@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { Property } from "@/types/Property";
 import { StaffSection } from "@/app/properties/[propertyId]/StaffSection";
 import { IssuesSection } from "@/app/properties/[propertyId]/IssuesSection";
@@ -65,6 +66,12 @@ export default function PropertyPageContent({
           fill
           className="object-cover brightness-[0.75]"
         />
+        {/* Go Back Button */}
+        <Link href="/properties">
+          <button className="absolute top-4 right-4 z-10 bg-ecrinNavy hover:bg-ecrinNavy/80 font-bold text-white py-1 px-3 rounded shadow">
+            Go Back
+          </button>
+        </Link>
         <div className="absolute inset-0 flex items-end justify-start p-8">
           <h1 className="text-2xl md:text-4xl font-bold text-white">
             {property.name}
