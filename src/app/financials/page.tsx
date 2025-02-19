@@ -21,7 +21,7 @@ export default function Financials() {
         {/* Left Column - Summary and Top Properties */}
         <div className="space-y-6 lg:col-span-5">
           <FinancialSummary />
-          <TopPropertiesTable properties={properties} />
+          <TopPropertiesTable />
           <RevenueTable properties={properties} />
         </div>
 

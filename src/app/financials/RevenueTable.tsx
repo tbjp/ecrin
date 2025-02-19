@@ -9,7 +9,16 @@ import {
 } from "@/components/ui/Table";
 import { Card, Title } from "@/components/ui/Card";
 
-export default function RevenueTable({ properties }) {
+interface Property {
+  property: string;
+  Bookings: number;
+}
+
+interface RevenueTableProps {
+  properties: Property[];
+}
+
+export default function RevenueTable({ properties }: RevenueTableProps) {
   return (
     <Card>
       <Title>Revenue & Bookings</Title>
