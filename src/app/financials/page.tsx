@@ -1,7 +1,6 @@
 // app/financials/page.tsx
 "use client";
 
-import { Text } from "@/components/ui/Card";
 import RevenueTable from "./RevenueTable";
 import FinancialSummary from "./FinancialSummary";
 import RevenueChart from "./RevenueChart";

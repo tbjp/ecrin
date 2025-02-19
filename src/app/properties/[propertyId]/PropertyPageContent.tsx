@@ -43,11 +43,11 @@ export default function PropertyPageContent({
     date: "",
   }));
   // const [issues, setIssues] = useState(initialIssues);
-  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isModalOpen] = useState(false);
   // const [newIssue, setNewIssue] = useState("");
   // const [newIssueDate, setNewIssueDate] = useState("");
 
-  const [isStaffModalOpen, setIsStaffModalOpen] = useState(false);
+  const [isStaffModalOpen] = useState(false);
   // const [newStaffMember, setNewStaffMember] = useState("");
   // const [staffMembers, setStaffMembers] = useState(property.staffMembers || []);
 

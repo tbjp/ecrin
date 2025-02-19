@@ -1,5 +1,4 @@
 import { TbSearch } from "react-icons/tb";
-import { TbBaguette } from "react-icons/tb";
 import { TbNotification } from "react-icons/tb";
 
 const Navbar = () => {
