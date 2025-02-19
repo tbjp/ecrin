@@ -95,7 +95,7 @@ function DashIncomeChart() {
       formattedValue2 = currencyFormatter(thisYearValue);
     }
   } else {
-    formattedValue2 = currencyFormatter(data[0].thisYear);
+    formattedValue2 = currencyFormatter(data[0].thisYear ?? 0);
   }
 
   return (
