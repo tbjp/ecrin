@@ -3,9 +3,9 @@ import { notFound } from "next/navigation";
 import PropertyPageContent from "@/app/properties/[propertyId]/PropertyPageContent";
 
 type Props = {
-  params: {
+  params: Promise<{
     propertyId: string;
-  };
+  }>;
 };
 
 export default async function PropertyPage({ params }: Props) {
