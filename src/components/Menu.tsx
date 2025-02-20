@@ -20,26 +20,31 @@ const menuItems = [
         icon: <TbLayoutDashboardFilled />,
         label: "Dashboard",
         href: "/",
+        disabled: false,
       },
       {
         icon: <TbPigMoney />,
         label: "Financials",
         href: "/financials",
+        disabled: false,
       },
       {
         icon: <BiBuildingHouse />,
         label: "Properties",
         href: "/properties",
+        disabled: false,
       },
       {
         icon: <GoPeople />,
         label: "Staff",
         href: "/staff",
+        disabled: true,
       },
       {
         icon: <TbCalendarCheck />,
         label: "Bookings",
         href: "/bookings",
+        disabled: true,
       },
     ],
   },
@@ -50,16 +55,19 @@ const menuItems = [
         icon: <CgProfile />,
         label: "Profile",
         href: "/profile",
+        disabled: true,
       },
       {
         icon: <TbSettings />,
         label: "Settings",
         href: "/settings",
+        disabled: true,
       },
       {
         icon: <TbLogout />,
         label: "Logout",
         href: "/logout",
+        disabled: true,
       },
     ],
   },
@@ -77,7 +85,17 @@ const Menu = () => {
           </span>
           {i.items.map((item) => {
             const isActive = pathname === item.href;
-            return (
+            return item.disabled ? (
+              <span
+                key={item.label}
+                className={`flex items-center justify-center lg:justify-start
+              gap-4 py-2 md:px-2 text-gray-500 cursor-pointer
+              text-xl lg:text-sm rounded-md`}
+              >
+                {item.icon}
+                <span className="hidden lg:block">{item.label}</span>
+              </span>
+            ) : (
               <Link
                 href={item.href}
                 key={item.label}
