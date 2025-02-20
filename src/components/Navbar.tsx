@@ -5,13 +5,14 @@ const Navbar = () => {
   return (
     <div className="flex items-center justify-between p-4">
       {/* Search */}
-      <div className="hidden md:flex items-center gap-2 text-xs rounded-full ring-[1.5px] ring-gray-300 px-2">
-        <TbSearch className="text-white" />
+      <div className="relative hidden md:block">
         <input
           type="text"
           placeholder="Search..."
-          className="w-[200px] p-2 bg-transparent outline-none"
+          className="w-[200px] pl-8 pr-4 py-3 text-xs rounded-full ring-[1.5px] ring-gray-300
+          bg-transparent outline-none text-white placeholder:text-gray-400"
         />
+        <TbSearch className="absolute left-3 top-1/2 -translate-y-1/2 text-white" />
       </div>
       {/* Profile icon */}
       <div className="flex items-center gap-6 justify-end w-full">
