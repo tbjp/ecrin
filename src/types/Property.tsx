@@ -12,4 +12,5 @@ export interface Property {
   staffMembers?: string[];
   activeBookings?: string[];
   futureBookings?: string[];
+  addedDate: Date;
 }

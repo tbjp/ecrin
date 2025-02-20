@@ -39,6 +39,7 @@ export const properties: Property[] = [
     staffMembers: [staffList[0], staffList[1], staffList[2]],
     activeBookings: [bookingList[0], bookingList[1]],
     futureBookings: [bookingList[2], bookingList[3]],
+    addedDate: new Date("2025-01-01"),
   },
   {
     id: "2",
@@ -52,6 +53,7 @@ export const properties: Property[] = [
     staffMembers: [staffList[1], staffList[2], staffList[3], staffList[4]],
     activeBookings: [bookingList[1], bookingList[2], bookingList[3]],
     futureBookings: [bookingList[0], bookingList[4]],
+    addedDate: new Date("2025-02-20"),
   },
   {
     id: "3",
@@ -67,6 +69,7 @@ export const properties: Property[] = [
     staffMembers: [staffList[0], staffList[2], staffList[3], staffList[4]],
     activeBookings: [bookingList[0], bookingList[2]],
     futureBookings: [bookingList[1], bookingList[3], bookingList[4]],
+    addedDate: new Date("2025-01-02"),
   },
   {
     id: "4",
@@ -80,6 +83,7 @@ export const properties: Property[] = [
     staffMembers: [staffList[1], staffList[3]],
     activeBookings: [bookingList[2], bookingList[4]],
     futureBookings: [bookingList[0], bookingList[1]],
+    addedDate: new Date("2025-01-03"),
   },
   {
     id: "5",
@@ -93,6 +97,7 @@ export const properties: Property[] = [
     staffMembers: [staffList[0], staffList[2], staffList[4]],
     activeBookings: [bookingList[1], bookingList[3]],
     futureBookings: [bookingList[0], bookingList[2], bookingList[4]],
+    addedDate: new Date("2025-01-04"),
   },
   {
     id: "6",
@@ -108,6 +113,7 @@ export const properties: Property[] = [
     staffMembers: [staffList[1], staffList[2], staffList[4]],
     activeBookings: [bookingList[0], bookingList[3]],
     futureBookings: [bookingList[1], bookingList[4]],
+    addedDate: new Date("2025-02-20"),
   },
   {
     id: "7",
@@ -121,6 +127,7 @@ export const properties: Property[] = [
     staffMembers: [staffList[0], staffList[1], staffList[3], staffList[4]],
     activeBookings: [bookingList[1], bookingList[2], bookingList[4]],
     futureBookings: [bookingList[0], bookingList[3]],
+    addedDate: new Date("2025-01-05"),
   },
   {
     id: "8",
@@ -136,6 +143,7 @@ export const properties: Property[] = [
     staffMembers: [staffList[0], staffList[2], staffList[4]],
     activeBookings: [bookingList[2], bookingList[3]],
     futureBookings: [bookingList[0], bookingList[1]],
+    addedDate: new Date("2025-01-06"),
   },
   {
     id: "9",
@@ -149,6 +157,7 @@ export const properties: Property[] = [
     staffMembers: [staffList[1], staffList[2], staffList[3], staffList[4]],
     activeBookings: [bookingList[0], bookingList[2], bookingList[4]],
     futureBookings: [bookingList[1], bookingList[3]],
+    addedDate: new Date("2025-02-20"),
   },
   {
     id: "10",
@@ -164,5 +173,6 @@ export const properties: Property[] = [
     staffMembers: [staffList[0], staffList[1], staffList[3], staffList[4]],
     activeBookings: [bookingList[1], bookingList[3]],
     futureBookings: [bookingList[0], bookingList[2], bookingList[4]],
+    addedDate: new Date("2025-02-20"),
   },
 ];
