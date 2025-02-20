@@ -28,12 +28,18 @@ const chartdata: DataItem[] = [
 ];
 
 export const DashBarChart = () => (
-  <BarChart
-    className="h-80 pe-8 pt-3"
-    data={chartdata}
-    index="property"
-    categories={["Bookings"]}
-    showLegend={false}
-  />
-  
+  <div>
+    <BarChart
+      className="h-80 pe-8 pt-3"
+      data={chartdata}
+      index="property"
+      categories={["Bookings"]}
+      showLegend={false}
+    />
+    <div className="flex flex-col items-center justify-center gap-2">
+      <div className="text-xl font-medium text-gray-500 dark:text-gray-50">
+        Lowest and Highest Current Bookings
+      </div>
+    </div>
+  </div>
 );
