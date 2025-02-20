@@ -60,41 +60,43 @@ export function BookingsTable({ bookings, title }: BookingsTableProps) {
   return (
     <Card className="md:col-span-2">
       <Title>{title}</Title>
-      <Table>
-        <TableHead>
-          <TableRow>
-            <TableHeaderCell>Booking</TableHeaderCell>
-            <TableHeaderCell>Check-in</TableHeaderCell>
-            <TableHeaderCell>Check-out</TableHeaderCell>
-            <TableHeaderCell>Nights</TableHeaderCell>
-            <TableHeaderCell>Price per Night</TableHeaderCell>
-            <TableHeaderCell>Total Price</TableHeaderCell>
-          </TableRow>
-        </TableHead>
-        <TableBody>
-          {bookingData?.map((data, index) => {
-            const {
-              booking,
-              checkIn,
-              checkOut,
-              nights,
-              pricePerNight,
-              totalPrice,
-            } = data;
+      <div className="overflow-x-auto">
+        <Table>
+          <TableHead>
+            <TableRow>
+              <TableHeaderCell>Booking</TableHeaderCell>
+              <TableHeaderCell>Check-in</TableHeaderCell>
+              <TableHeaderCell>Check-out</TableHeaderCell>
+              <TableHeaderCell>Nights</TableHeaderCell>
+              <TableHeaderCell>Price per Night</TableHeaderCell>
+              <TableHeaderCell>Total Price</TableHeaderCell>
+            </TableRow>
+          </TableHead>
+          <TableBody>
+            {bookingData?.map((data, index) => {
+              const {
+                booking,
+                checkIn,
+                checkOut,
+                nights,
+                pricePerNight,
+                totalPrice,
+              } = data;
 
-            return (
-              <TableRow key={index}>
-                <TableCell>{booking}</TableCell>
-                <TableCell>{checkIn.toLocaleDateString("ja-JP")}</TableCell>
-                <TableCell>{checkOut.toLocaleDateString("ja-JP")}</TableCell>
-                <TableCell>{nights}</TableCell>
-                <TableCell>{formatJPY(pricePerNight)}</TableCell>
-                <TableCell>{formatJPY(totalPrice)}</TableCell>
-              </TableRow>
-            );
-          })}
-        </TableBody>
-      </Table>
+              return (
+                <TableRow key={index}>
+                  <TableCell>{booking}</TableCell>
+                  <TableCell>{checkIn.toLocaleDateString("ja-JP")}</TableCell>
+                  <TableCell>{checkOut.toLocaleDateString("ja-JP")}</TableCell>
+                  <TableCell>{nights}</TableCell>
+                  <TableCell>{formatJPY(pricePerNight)}</TableCell>
+                  <TableCell>{formatJPY(totalPrice)}</TableCell>
+                </TableRow>
+              );
+            })}
+          </TableBody>
+        </Table>
+      </div>
     </Card>
   );
 }
