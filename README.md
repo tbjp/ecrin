@@ -2,6 +2,11 @@
 
 A modern property management dashboard built with Next.js 14, TypeScript, and TailwindCSS. Monitor properties, bookings, staff, and maintenance issues with data visualization.
 
+![image](https://github.com/user-attachments/assets/5ee623e9-8418-4191-8119-0f766c0a92ae)
+![image](https://github.com/user-attachments/assets/6d894240-5139-409e-b86a-af7510e2d8b7)
+![image](https://github.com/user-attachments/assets/df15ea75-0eec-4322-b08f-8d73a560cced)
+
+
 ## Features
 
 - 📊 Interactive charts and analytics
